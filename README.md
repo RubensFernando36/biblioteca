@@ -19,7 +19,7 @@ Este projeto é um Sistema de Gestão de Biblioteca criado em MySQL. Ele permite
 ## Como Configurar
 
 1. Clone o repositório.
-2. Importe o arquivo `biblioteca.sql` no seu banco de dados MySQL.
+2. Importe o arquivo `Projeto Biblioteca.sql` no seu banco de dados MySQL.
 3. Use as consultas fornecidas para interagir com o sistema.
 
 ## Exemplo de Uso
