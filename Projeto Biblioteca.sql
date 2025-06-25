@@ -89,9 +89,8 @@ ALTER TABLE Empréstimos ADD COLUMN DiasAtraso INT;
 
 UPDATE Empréstimos
 SET DiasAtraso = CASE
-					WHEN COALESCE(DataDevolvido, CURRENT_DATE) > DataDevolucao
-                    THEN DATEDIFF(COALESCE(DataDevolvido, CURRENT_DATE), DataDevolucao)
-                    ELSE 0
-				END;
-                
-SELECT*FROM Empréstimos;
+		WHEN COALESCE(DataDevolvido, CURRENT_DATE) > DataDevolucao
+                THEN DATEDIFF(COALESCE(DataDevolvido, CURRENT_DATE), DataDevolucao)
+                ELSE 0
+		END;
+
